@@ -1,1 +1,4 @@
+## Data files 
 data/
+#Passwords
+.env
