@@ -27,7 +27,7 @@ CSV Files → MySQL → PySpark → Transfomation → Analytics
 - Which categories get the worst reviews?
 
 ## Schema & Data Quality
-## Day 2 — Schema & Data Quality
+
 
 - Mapped the 9-table Olist schema: customers → orders → order_items → products/sellers,
   plus payments, reviews, geolocation, and category translation.
