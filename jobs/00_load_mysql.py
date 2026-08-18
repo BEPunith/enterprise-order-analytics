@@ -50,7 +50,15 @@ for table_name, file_name in tables.items():
     print(f"\nLoading {table_name} from {file_name}...")
 
     df = pd.read_csv(file_path)
-    df = df.where(pd.notnull(df), None)
+    if table_name == "products":
+        df = df.rename(columns={
+            "product_name_lenght": "product_name_length",
+            "product_description_lenght": "product_description_length"
+    })
+    ##df = pd.read_csv(file_path)
+
+# Convert missing values to Python None
+    df = df.astype(object).where(pd.notnull(df), None)
 
     print(f"  Rows to load: {len(df)}")
 
