@@ -36,3 +36,6 @@ CSV Files → MySQL → PySpark → Transfomation → Analytics
 - Added `data_verification_and_quality_checks.sql` — NULL checks, duplicate checks,
   and referential integrity checks between tables.
 - Data confirmed clean and ready for SQL analysis.
+
+## Practice: Git Branching
+This section was added on a separate branch to test the branch → commit → merge workflow.
